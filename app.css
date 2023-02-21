@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background-color: black;
+}
+nav{
+    display: flex;
+    padding: 0.6%;
+    background-color: blue;
+    font-size: 1.2vw;
+}
+.logo{
+    width: 60%;
+}
+ul{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#loader{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 15;
+    text-align: center;
+    line-height: 100vh;
+    font-size: 100px;
+    display: block;
+}
+
+.movie{
+    min-width: 100px;
+    width: 15vw;
+    height: 20vw;
+   
+}
+.movie-img-wrapper{     
+    height: 22vw;
+    border-radius: 5%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.movie-img-wrapper:hover{
+    opacity: 0.5;
+}
+
+main{
+    font-size:1vw;
+    height: 25vw;
+    margin: 2% 5% 2% 5%;
+    display: flex;
+    gap: 2%;
+    overflow-x: scroll ;
+    color: white;    
+}
+
+main::-webkit-scrollbar{
+    height: 10px;
+}
+
+main::-webkit-scrollbar-track{
+    background: aqua;
+}
+
+main::-webkit-scrollbar-thumb{
+    background: blue;
+}
+
+h4{
+    padding-left: 20px
+}
+h3{
+    font-size:2vw;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+      flex-wrap: wrap;
+      height: 50vh;
+    }
+    .movie-img-wrapper{ 
+        height: 35vw;
+    }
+  }
+
+#booker{
+    width: 100%;
+    text-align: center;
+    height: 60vh;
+}
+#booker-grid-holder{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-around;
+}
+.booking-grid{
+    margin: 10px 0px 5px 0px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    border: 1px solid black; 
+}
+
+.booking-grid div{
+    min-width: 50px;
+    margin: 5px;
+    text-align: center;
+    padding: 2vw;
+    font-size: 2vw;
+}
+
+.available-seat{
+    background-color:forestgreen;
+ 
+}
+.unavailable-seat{
+    cursor: no-drop;
+    background-color:orangered;
+}
+.selected-seat{
+    border:8px outset white;
+}
+#book-ticket-btn, #submit{
+    font-size: 1vw;
+    font-weight: bold;
+    padding: 10px;
+    color: black;
+}
+
+#customer-detail-form{
+    margin-top: 20px;
+}
+
+#customer-detail-form input{
+    margin: 10px;
+    font-size: 1vw;
+    color: black;
+}
+
+
+label{
+    font-size: 1.2vw;
+}
+
+#Success div{    
+    margin-top: 20px;
+    font-size: 1.2vw;
+}
+
+.d-none{
+    display: none;
+}
+.v-none{
+    visibility: hidden;
+}
+
+footer{
+    margin-top: 50px;
+}
+footer div{
+    font-size: 1vw;
+    height: 80px;
+    line-height: 80px;
+    background-color: gray;
+    color: white;
+    text-align: center;
+}
+footer div span{
+    color:gold;
+}
